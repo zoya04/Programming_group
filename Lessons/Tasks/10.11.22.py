@@ -92,3 +92,52 @@ print(random_int)
 
 try_num = 10 
 
+
+
+# while try_num > 0:
+#     user_num = int(input("Введите число:"))
+#     if user_num == random_int:
+#         pass
+#     elif user_num < random_int:
+#         pass
+#     elif user_num > random_int:
+#         pass
+#     try_num = try_num - 1
+#     print(try_num)
+# else:
+#     print('игра закончена!')
+
+# while try_num > 0:
+#     user_num = int(input("Введите число:"))
+#     if user_num == random_int:
+#         print("вы угадали! загаданное число было", random_int, f"Осталось{try_num} попыток")
+#         break
+#     elif user_num < random_int:
+#         print("Введенное число меньше загаданного")
+#     elif user_num > random_int:
+#         print("Введенное число больше загаданного")
+#     try_num = try_num - 1
+#     print(try_num)
+# else:
+#     print("У вас не осталось попыток!")
+# print('игра закончена!')
+
+while try_num > 0:
+     user_num = int(input("Введите число:"))
+     if user_num <1 or user_num > 100: 
+        print("Вы ввели неверное число! Введите число от 1 до 100")
+        continue 
+     if user_num == random_int:
+         print("вы угадали! загаданное число! В", random_int, f"Осталось{try_num} попыток")
+         break
+     elif user_num < random_int:
+         print("Введенное число меньше загаданного")
+     elif user_num > random_int:
+         print("Введенное число больше загаданного")
+     try_num = try_num - 1
+     print(try_num)
+     
+else:
+     print("У вас не осталось попыток!")
+print('игра закончена!')
+
